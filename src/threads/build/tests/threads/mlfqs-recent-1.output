@@ -1,0 +1,20 @@
+qemu -hda /tmp/Ng2xYo975e.dsk -m 4 -net none -nographic -monitor null
+PiLo hda1
+Loading.........
+Kernel command line: -q -mlfqs run mlfqs-recent-1
+Pintos booting with 4,096 kB RAM...
+383 pages available in kernel pool.
+383 pages available in user pool.
+Calibrating timer...  104,755,200 loops/s.
+Boot complete.
+Executing 'mlfqs-recent-1':
+Kernel PANIC at ../../tests/threads/tests.c:60 in run_test(): no test named "mlfqs-recent-1"
+Call stack: 0xc0028799 0xc002a6e2 0xc00207d1 0xc0020771.
+The `backtrace' program can make call stacks useful.
+Read "Backtraces" in the "Debugging Tools" chapter
+of the Pintos documentation for more information.
+Timer: 20 ticks
+Thread: 0 idle ticks, 20 kernel ticks, 0 user ticks
+Console: 614 characters output
+Keyboard: 0 keys pressed
+Powering off...
